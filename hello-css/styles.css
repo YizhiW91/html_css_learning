@@ -1,0 +1,18 @@
+body {
+  color: #414141; /* dark grey */
+  background-color: #EEEEEE;   /* Light gray */
+  font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica", "Arial", sans-serif;
+  text-align: justify;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ol {
+  list-style-type: lower-roman;
+}
