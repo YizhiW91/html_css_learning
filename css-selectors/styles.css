@@ -1,0 +1,121 @@
+/* selector for a class, starting with a dot */
+.synopsis{
+  color: #7E8184;        /* Light gray */
+  font-style: italic;
+}
+
+/* decendent selector allows you to format sepecific class under another class,
+it can be multiple levels down. Doesn't need to be direct decendant */
+.synopsis em {
+  font-style: normal;
+}
+
+/* child selector allows you to format sepecific class under exactly
+one level of the first class */
+.synopsis > em {
+  font-style: normal;
+}
+
+.page {
+  width: 600px;
+  margin: 0 auto;
+}
+
+/* pseudo classes */
+/* a link user has never visited */
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+/* a link user has visited */
+a:visited {
+  color: purple;
+}
+/* a link user is hovering over */
+a:hover {
+  color: aqua;
+  text-decoration: underline;
+}
+/* a link user is clicking on */
+a:active {
+  color: red;
+}
+/* apply hover over visited link */
+a:visited:hover {
+  color: orange;
+}
+/* apply hover over visited link */
+a:visited:active {
+  color: gold;
+}
+
+.button:link,                 /* Change this */
+.button:visited {             /* Change this */
+  display: block;             /* To make <a href> as a block element */
+  text-decoration: none;      /* Add this */
+
+  color: #FFF;                /* The rest is the same */
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+
+  width: 200px;
+  margin: 20px auto;
+}
+
+.button:hover,
+.button:visited:hover {
+  color: #FFF;
+  background-color: #76AEED;  /* Light blue */
+}
+
+.button:active,
+.button:visited:active {
+  color: #FFF;
+  background-color: #5995DA;  /* Blue */
+}
+
+.call-to-action:link,
+.call-to-action:visited {
+  font-style: italic;
+  background-color: #EEB75A;     /* Yellow */
+}
+
+.call-to-action:hover,
+.call-to-action:visited:hover {
+  background-color: #F5CF8E;     /* Light yellow */
+}
+
+.call-to-action:active,
+.call-to-action:visited:active {
+  background-color: #EEB75A;     /* Yellow */
+}
+
+.call-to-action:link,
+.call-to-action:visited {
+  font-style: italic;
+  background-color: #EEB75A;     /* Yellow */
+}
+
+.call-to-action:hover,
+.call-to-action:visited:hover {
+  background-color: #F5CF8E;     /* Light yellow */
+}
+
+/* last of type pseudo class, apply to last element of that type in the page */
+p:last-of-type {
+  margin-bottom: 50px;
+}
+p:first-of-type {
+  color: #7E8184;
+  font-style: italic;
+}
+
+/* ID selector starts with a hash tag,
+usually avoiding this for general style, but it can be useful as urls for an element*/
+#button-3 {
+  background-color: green;
+}
