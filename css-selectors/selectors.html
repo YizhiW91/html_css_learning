@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>CSS Selectors</title>
+    <link rel='stylesheet' href='styles.css'/>
+  </head>
+  <body>
+
+    <div class="page">
+      <h1>CSS Selectors</h1>
+
+      <!-- adding class to a block element -->
+      <!-- usually all lowercase and hyphen -->
+      <p class='synopsis'>CSS selectors let you <em>select</em> individual HTML elements in an HTML
+         document. This is <strong>super</strong> useful.</p>
+
+      <p>Classes are ridiculously important, since they allow you to select
+         arbitrary boxes in your web pages.</p>
+
+      <p>We’ll also be talking about links in this example, so here’s
+         <a href='https://internetingishard.com'>Interneting Is Hard</a> for us to
+         style.</p>
+
+      <a id ='button-1' class='button' href='nowhere.html'>Button One</a>
+      <!-- Multi-class order is irrelevant in the html file, it matters in style sheet-->
+      <a class='button call-to-action' href='nowhere.html'>Button Two</a>
+      <!-- button with id attribute -->
+      <a id="button-3" class='button' href='nowhere.html'>Button Three</a>
+      <!-- From the same page -->
+      <a href='#button-1' class='button'>Go to Button 1</a>
+    </div>
+  </body>
+</html>
